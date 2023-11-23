@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color" />
+            <corners android:radius="10dp" />
+            <padding android:right="10dp" />
+        </shape>
+    </item>
+
+    <!-- Bitmap Image -->
+    <item
+        android:drawable="@drawable/ic_spinner"
+        android:right="10dp"
+        android:gravity="center|end"/>
+</layer-list>

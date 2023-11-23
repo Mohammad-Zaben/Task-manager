@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">firstAssignment</string>
+    <string name="editbt"><![CDATA[Edit Title & Descr]]></string>
+    <string name="deletebt">Delete</string>
+    <string name="savebt">Save</string>
+    <string-array name="options">
+        <item>Sort By Name</item>
+        <item>Sort Do/Not</item>
+        <item>Sort By Date</item>
+    </string-array>
+
+    <string-array name="priority">
+        <item>Urgent and Important</item>
+        <item>Not Urgent but Important</item>
+        <item>Urgent but Not Important</item>
+        <item>Not Urgent and Not Important</item>
+
+    </string-array>
+</resources>

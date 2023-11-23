@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/txtTitle1"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:text="Welcome to the Task Manager"
+        android:textColor="@color/lavender"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/title_border"
+        android:gravity="center_vertical|center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="51dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imageCard"
+            android:layout_width="155dp"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            android:layout_marginStart="60dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btnAdd"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:onClick="btnAddOnClick"
+                    app:srcCompat="@drawable/ic_add_new_task"
+
+                    />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Add New Task"
+                    android:textAlignment="center"
+                    android:textColor="@color/lavender"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imageCard1"
+            android:layout_width="155dp"
+            android:layout_height="130dp"
+            android:layout_gravity="right"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            android:layout_marginStart="5dp">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btnAdd1"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:onClick="btShowTasks"
+                    app:srcCompat="@drawable/ic_show_task" />
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Show Tasks"
+                    android:textAlignment="center"
+                    android:textColor="@color/lavender"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

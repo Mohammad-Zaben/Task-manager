@@ -1,0 +1,126 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F0"
+    android:orientation="vertical"
+    tools:context=".AddNewTask"
+
+    >
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/date_border"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Date of note"
+        android:textColor="@color/color"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/btnAdd1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="18dp"
+        android:onClick="EditOnClick"
+        app:srcCompat="@drawable/ic_edit" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+
+        android:hint="Task Title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtDescr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:hint="Task Description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtDescr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:lines="6" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/spinner_style"
+        android:entries="@array/priority"
+        android:padding="10dp" />
+
+    <Switch
+        android:id="@+id/Do"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="SwitchOnClick"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:text="Do"
+        android:textSize="24sp"
+        android:thumb="@drawable/thumb"
+        android:track="@drawable/track"
+
+        />
+
+
+    <Button
+        android:id="@+id/btDelete"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:onClick="DeleteOnClick"
+        android:text="@string/deletebt"
+        android:textAllCaps="false"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/btDSave"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:onClick="SaveOnClock"
+        android:text="@string/savebt"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
